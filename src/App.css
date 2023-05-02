@@ -1,38 +1,106 @@
+body {
+  background-image:-webkit-linear-gradient(top, 
+  rgba(0,0,0,1) 10%, 
+  rgba(0,0,0,0) 20%,
+  rgba(0,0,0,.9) 70%,
+  rgba(0,0,0,0.9) 200%
+),
+url(./arcade.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 100% 30% !important;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  font-size: 10px;
+  padding-top: 5px;
+  font-family: 'Arcade';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board {
+  background: linear-gradient(to top right, #000000, #2e2e2e);
+  width: 400px;
+  min-height: 400px;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  border: 3px solid #341b41;
+  /* overflow:hidden; */
+  display: inline-block
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title-top-score {
+  margin-top: 3vw !important;
+  margin-bottom: 8vw !important;
+  margin: auto;
+  border-radius: 20px;
+
+  width: 320px;
+  height: 30px;   
+  background-color: hotpink;
+  box-shadow: 0 3px 10px hotpink;
+
+}
+
+.title-top-time{
+  margin-top: 3vw !important;
+  margin-bottom: 8vw !important;
+  margin: auto;
+  border-radius: 20px;
+
+  width: 320px;
+  height: 30px;   
+  background-color: rgb(110, 0, 161);
+  box-shadow: 0 3px 10px rgb(104, 0, 222);
+}
+
+.title-top-movement {
+  margin-top: 3vw !important;
+  margin-bottom: 8vw !important;
+  margin: auto;
+  border-radius: 20px;
+
+  width: 320px;
+  height: 30px;   
+  background-color: rgb(0, 158, 161);
+  box-shadow: 0 3px 10px rgb(0, 158, 161);
+}
+
+.title {
+  color: hotpink;
+  font-family: 'Arcade' !important;
+  font-size: 40px;
+}
+
+.item {
+  margin: 10px;
+  font-size: 8px;
   color: white;
+  font-family: 'Arcade';
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #951990; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #951990; 
 }
